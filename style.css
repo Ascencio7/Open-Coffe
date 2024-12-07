@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    list-style: none;
+    margin: 0; /* Elimina los márgenes predeterminados de todos los elementos */
+    padding: 0; /* Elimina el relleno predeterminado de todos los elementos */
+    box-sizing: border-box; /* Incluye el padding y el borde en el tamaño total de los elementos */
+    text-decoration: none; /* Elimina la decoración de texto (como subrayados) de todos los elementos */
+    list-style: none; /* Elimina los estilos de lista de todos los elementos de lista */
 }
 
 body{
@@ -13,400 +13,409 @@ body{
 }
 
 .container{
-    max-width: 1200px;
-    margin: 0 auto;
+    max-width: 1200px; /* Define un ancho máximo de 1200px para el contenedor */
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
 }
 
 .header{
     background-image: linear-gradient(
         rgba(0,0,0,0.7), 
         rgba(0,0,0,0.7)), 
-        url(images/bg.jpg);
-    background-position: center bottom;
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 70vh;
-    display: flex;
-    align-items: center;
+        url(images/bg.jpg); /* Agrega una imagen de fondo con un gradiente superpuesto */
+    background-position: center bottom; /* Posiciona la imagen de fondo al centro en la parte inferior */
+    background-repeat: no-repeat; /* Evita la repetición de la imagen de fondo */
+    background-size: cover; /* Ajusta la imagen de fondo para cubrir todo el contenedor */
+    min-height: 70vh; /* Define una altura mínima del 70% de la altura de la ventana */
+    display: flex; /* Utiliza el modelo de caja flexible */
+    align-items: center; /* Centra los elementos hijos verticalmente */
 }
+
 
 .menu {
-    position: absolute;
-    top: 0;
+    position: absolute; /* Posiciona el menú de forma absoluta */
+    top: 0; /* Ubica el menú en la parte superior */
     left: 0;
     right: 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    display: flex; /* Utiliza el modelo de caja flexible */
+    align-items: center; /* Alinea los elementos hijos verticalmente */
+    justify-content: space-between; /* Distribuye los elementos hijos con espacio entre ellos */
 }
 
-.logo {
-    color: #fffdfc;
-    font-size: 25px;
-    font-weight: 800;
+.logo img{
+    width: 100px; /* Define un ancho de 100px para la imagen */
+    height: auto; /* Ajusta la altura automáticamente */
+    position: relative; 
+    left: -110px; /*Es para mover la imagen a la izquierda*/
+    top: 15px; /*Es para bajar la imagen*/
 }
 
 .menu .navbar ul li {
     position: relative;
-    float: left;
+    float: left; /* Flota los elementos de lista a la izquierda */
 }
 
 .menu .navbar ul li a {
-    font-size: 18px;
-    padding: 20px;
-    color: #fffdfc;
-    display: block;
-    font-weight: 600;
+    font-size: 18px; /* Define un tamaño de fuente de 18px para los enlaces */
+    padding: 20px; /* Agrega un relleno de 20px */
+    color: #fffdfc; /* Define el color del texto a blanco */
+    display: block; /* Muestra el enlace como un bloque */
+    font-weight: 600; /* Define un peso de fuente seminegrita */
 }
 
 .menu .navbar ul li a:hover {
-    color: #ce9678;
+    color: #ce9678; /* Flota los elementos de lista a la izquierda */
 }
 
 
 #menu {
-    display: none;
+    display: none; /* Oculta el checkbox del menú */
 }
 
 .menu-icono{
-    width: 25px;
+    width: 25px; /* Define un ancho de 25px para el icono del menú */
 }
 
 .menu label {
-    cursor: pointer;
-    display: none;
+    cursor: pointer; /* Cambia el cursor al pasar el ratón */
+    display: none; /* Oculta el label del menú */
 }
 
 .header-content {
-    text-align: center;
+    text-align: center; /* Centra el texto del contenido del encabezado */
 }
 
 .header-content h1{
-    font-size: 75px;
-    line-height: 80px;
-    color: #f9fafc;
-    text-decoration: uppercase;
-    margin-bottom: 35px;
+    font-size: 75px; /* Define un tamaño de fuente de 75px para los encabezados */
+    line-height: 80px; /* Define una altura de línea de 80px */
+    color: #f9fafc; /* Define el color del texto a un blanco grisáceo */
+    text-decoration: uppercase; /* Convierte el texto a mayúsculas */
+    margin-bottom: 35px; /* Agrega un margen inferior de 35px */
 }
 
 .header-content p {
-    font-size: 16px;
-    color: #c5c5c5;
-    padding: 0 250px;
-    margin-bottom: 25px;
+    font-size: 16px; /* Define un tamaño de fuente de 16px para los párrafos */
+    color: #c5c5c5; /* Define el color del texto a un gris claro */
+    padding: 0 250px; /* Agrega un relleno de 250px a la izquierda y derecha */
+    margin-bottom: 25px; /* Agrega un margen inferior de 25px */
 }
 
 .btn-1 {
-    display: inline-block;
-    padding: 11px 35px;
-    background-color: #ce9678;
-    color: #f9fafc;
-    text-transform: uppercase;
+    display: inline-block; /* Muestra el botón como un bloque en línea */
+    padding: 11px 35px; /* Agrega un relleno de 11px arriba y abajo, y 35px a los lados */
+    background-color: #ce9678; /* Define el color de fondo del botón */
+    color: #f9fafc; /* Define el color del texto del botón */
+    text-transform: uppercase; /* Convierte el texto del botón a mayúsculas */
 }
 
 .btn-1:hover{
-    background-color: #ebad8d;
+    background-color: #ebad8d; /* Cambia el color de fondo del botón al pasar el ratón */
 }
 
 .coffe {
-    padding: 100px 0;
-    background-color: #e1e2e6;
-    position: relative;
+    padding: 100px 0; /* Agrega un relleno de 100px arriba y abajo */
+    background-color: #e1e2e6; /* Define el color de fondo de la sección */
+    position: relative; /* Posiciona la sección de forma relativa */
 }
 
 .coffe-container{
-    text-align: center;
+    text-align: center; /* Centra el texto del contenedor de café */
 }
 
 .coffe-content h2{
-    font-size: 55px;
-    line-height: 70px;
-    color: #323337;
-    text-transform: uppercase;
-    padding: 0 250px;
-    margin-bottom: 15px;
+    font-size: 55px; /* Define un tamaño de fuente de 55px para los encabezados */
+    line-height: 70px; /* Define una altura de línea de 70px */
+    color: #323337;  /* Define el color del texto a un gris oscuro */
+    text-transform: uppercase; /* Convierte el texto a mayúsculas */
+    padding: 0 250px; /* Agrega un relleno de 250px a la izquierda y derecha */
+    margin-bottom: 15px; /* Agrega un margen inferior de 15px */
 }
 
 .txt-p {
-    font-size: 16px;
-    color: #414247;
-    padding: 0 250px;
-    margin-bottom: 35px;
+    font-size: 16px; /* Define un tamaño de fuente de 16px para los párrafos */
+    color: #414247; /* Define el color del texto a un gris oscuro */
+    padding: 0 250px; /* Agrega un relleno de 250px a la izquierda y derecha */
+    margin-bottom: 35px; /* Agrega un margen inferior de 35px */
 }
 
 .coffe-group {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 50px;
+    display: flex; /* Utiliza el modelo de caja flexible */
+    justify-content: space-between; /* Distribuye los elementos hijos con espacio entre ellos */
+    margin-bottom: 50px; /* Agrega un margen inferior de 50px */
 }
 
 .coffe-1 {
-    padding: 25px;
-}
+    padding: 25px; /* Agrega un relleno de 25px */
+} 
 
 .coffe-1 img{
-    width:  200px;
+    width:  200px; /* Define un ancho de 200px para las imágenes */
 }
 
 .coffe-img{
-    position: absolute;
-    top: 0;
-    right: 0;
+    position: absolute; /* Posiciona la imagen de forma absoluta */
+    top: 0; /* Ubica la imagen en la parte superior */
+    right: 0; /* Ubica la imagen a la derecha */
 }
 
 .coffe-1 h3 {
-    color: #323337;
-    font-size: 20px;
-    margin-bottom: 15px;
+    color: #323337; /* Define el color del texto a un gris oscuro */
+    font-size: 20px; /* Define un tamaño de fuente de 20px para los encabezados */
+    margin-bottom: 15px; /* Agrega un margen inferior de 15px */
 }
 
 .services {
     background-image:  linear-gradient(
         rgba(0,0,0,0.7),
         rgba(0,0,0,0.7)),
-        url(images/bg2.jpg);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    padding: 100px 0;
+        url(images/bg2.jpg); /* Agrega una imagen de fondo con un gradiente superpuesto */
+    background-position: center center; /* Posiciona la imagen de fondo al centro */
+    background-repeat: no-repeat; /* Evita la repetición de la imagen de fondo */
+    background-size: cover; /* Ajusta la imagen de fondo para cubrir todo el contenedor */
+    background-attachment: fixed; /* Fija la imagen de fondo al desplazarse */
+    padding: 100px 0; /* Agrega un relleno de 100px arriba y abajo */
 }
 
 .services-content{
-    text-align: center;
+    text-align: center; /* Centra el texto del contenido de servicios */
 }
 
 .services-content h2 {
-    font-size: 55px;
-    line-height: 70px;
-    color: #f9fafc;
-    text-transform: uppercase;
-    margin-bottom: 50px;
+    font-size: 55px; /* Define un tamaño de fuente de 55px para los encabezados */
+    line-height: 70px; /* Define una altura de línea de 70px */
+    color: #f9fafc; /* Define el color del texto a un blanco grisáceo */
+    text-transform: uppercase; /* Convierte el texto a mayúsculas */
+    margin-bottom: 50px; /* Agrega un margen inferior de 50px */
 }
 
 .services-content p {
-    font-size:  16px;
-    color: #c5c5c5;
-    margin-bottom: 50px;
+    font-size:  16px; /* Define un tamaño de fuente de 16px para los párrafos */
+    color: #c5c5c5; /* Define el color del texto a un gris claro */
+    margin-bottom: 50px; /* Agrega un margen inferior de 50px */
     padding: 0 100px;
 }
 
+
+
 .services-group {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 50px;
+    display: flex; /* Utiliza el modelo de caja flexible */
+    justify-content: space-between; /* Distribuye los elementos hijos con espacio entre ellos */
+    margin-bottom: 50px; /* Agrega un margen inferior de 50px */
 }
 
 .services-1 {
-    padding: 0 100px;
+    padding: 0 100px; /* Agrega un relleno de 100px a los lados */
 }
 
 .services-img {
-    width: 25px;
-    margin-bottom: 15px;
+    width: 25px; /* Define un ancho de 25px para las imágenes */
+    margin-bottom: 15px; /* Agrega un margen inferior de 15px */
 }
 
 .services-1 h3 {
-    color: #eaccb3;
-    font-size: 18px;
+    color: #eaccb3; /* Define el color del texto a un beige claro */
+    font-size: 18px; /* Define un tamaño de fuente de 18px para los encabezados */
 }
 
 .general {
-    display: flex;
+    display: flex; /* Utiliza el modelo de caja flexible */
 }
 
 .general-1 {
-    width: 50%;
-    padding: 100px 250px 100px 100px;
-    background-color: #e1e2e6;
+    width: 50%; /* Define un ancho del 50% para la primera sección */
+    padding: 100px 250px 100px 100px; /* Agrega un relleno de 100px arriba y abajo, y 250px y 100px a los lados */
+    background-color: #e1e2e6; /* Define el color de fondo de la sección */
 }
 
 .general-2 {
-    background-image: url(images/coffe-1.jpg);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 50%;
+    background-image: url(images/coffe-1.jpg); /* Agrega una imagen de fondo a la segunda sección */
+    background-position: center center; /* Posiciona la imagen de fondo al centro */
+    background-repeat: no-repeat; /* Evita la repetición de la imagen de fondo */
+    background-size: cover; /* Ajusta la imagen de fondo para cubrir todo el contenedor */
+    width: 50%; /* Define un ancho del 50% para la segunda sección */
 }
 
 .general-3 {
-    background-image: url(images/coffee-2.jpg);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 50%;
+    background-image: url(images/coffee-2.jpg); /* Agrega una imagen de fondo a la tercera sección */
+    background-position: center center; /* Posiciona la imagen de fondo al centro */
+    background-repeat: no-repeat; /* Evita la repetición de la imagen de fondo */
+    background-size: cover; /* Ajusta la imagen de fondo para cubrir todo el contenedor */
+    width: 50%; /* Define un ancho del 50% para la tercera sección */
 }
 
 h2 {
-    font-size: 55px;
-    line-height: 70px;
-    color: #323337;
-    text-transform: uppercase;
-    margin-bottom: 20px;
+    font-size: 55px; /* Define un tamaño de fuente de 55px para los encabezados */
+    line-height: 70px; /* Define una altura de línea de 70px */
+    color: #323337; /* Define el color del texto a un gris oscuro */
+    text-transform: uppercase; /* Convierte el texto a mayúsculas */
+    margin-bottom: 20px; /* Agrega un margen inferior de 20px */
 }
 
 p{
-    font-size: 16px;
-    color: #414247;
-    margin : 25px 0 45px 0;
+    font-size: 16px; /* Define un tamaño de fuente de 16px para los párrafos */
+    color: #414247; /* Define el color del texto a un gris oscuro */
+    margin: 25px 0 45px 0; /* Agrega un margen de 25px arriba y 45px abajo */
 }
 
 .blog {
-    padding: 100px 0;
-    text-align: center;
+    padding: 100px 0; /* Agrega un relleno de 100px arriba y abajo */
+    text-align: center; /* Centra el texto del blog */
 }
 
 .blog-content {
-    display: flex;
-    justify-content: space-between;
+    display: flex; /* Utiliza el modelo de caja flexible */
+    justify-content: space-between; /* Distribuye los elementos hijos con espacio entre ellos */
 }
 
 .blog-1 {
-    padding: 15px 55px;
+    padding: 15px 55px; /* Agrega un relleno de 15px arriba y abajo, y 55px a los lados */
 }
 
 .blog-1 img {
-    width: 250px;
-    border-radius: 25px;
-    margin-bottom: 25px;
+    width: 250px; /* Define un ancho de 250px para las imágenes */
+    border-radius: 25px; /* Agrega un borde redondeado de 25px */
+    margin-bottom: 25px; /* Agrega un margen inferior de 25px */
 }
 
 .blog-1 h3 {
-    font-size: 25px;
-    color: #323337;
+    font-size: 25px; /* Define un tamaño de fuente de 25px para los encabezados */
+    color: #323337; /* Define el color del texto a un gris oscuro */
 }
 
 .footer {
-    padding: 100px 0;
-    background-color: #000;
+    padding: 100px 0; /* Agrega un relleno de 100px arriba y abajo */
+    background-color: #000; /* Define el color de fondo del pie de página */
 }
 
 .footer-content {
-    display: flex;
-    justify-content: space-between;
+    display: flex; /* Utiliza el modelo de caja flexible */
+    justify-content: space-between; /* Distribuye los elementos hijos con espacio entre ellos */
 }
 
 .link h3 {
-    font-size: 18px;
-    color: #f9fafc;
-    margin-bottom: 15px;
+    font-size: 18px; /* Define un tamaño de fuente de 18px para los encabezados */
+    color: #f9fafc; /* Define el color del texto a un blanco grisáceo */
+    margin-bottom: 15px; /* Agrega un margen inferior de 15px */
 }
 
 .link a {
-    font-size: 16px;
-    color: #c5c5c5;
-    display: block;
-    margin-bottom: 15px;
+    font-size: 16px; /* Define un tamaño de fuente de 16px para los enlaces */
+    color: #c5c5c5; /* Define el color del texto a un gris claro */
+    display: block; /* Muestra los enlaces como bloques */
+    margin-bottom: 15px; /* Agrega un margen inferior de 15px */
 }
 
 @media(max-width:991px){
     .menu {
-        padding: 30px;
+        padding: 30px; /* Agrega un relleno de 30px para el menú en pantallas pequeñas */
     }
 
     .menu label{
-        display: initial;
+        display: initial; /* Muestra el label del menú */
     }
 
     .menu .navbar{
-        position: absolute;
-        top: 100%;
+        position: absolute; /* Posiciona la barra de navegación de forma absoluta */
+        top: 100%; /* Ubica la barra de navegación debajo del menú */
         left: 0;
         right: 0;
-        background-color: #323337;
-        display: none;
+        background-color: #323337; /* Define el color de fondo de la barra de navegación */
+        display: none; /* Oculta la barra de navegación */
     }
 
     .menu .navbar ul li {
-        width: 100%;
+        width: 100%; /* Define un ancho del 100% para los elementos de lista */
     }
 
     #menu:checked ~ .navbar{
-        display: initial;
+        display: initial; /* Muestra la barra de navegación cuando el menú está seleccionado */
     }
 
     .header{
-        min-height: 0vh;
+        min-height: 0vh; /* Elimina la altura mínima del encabezado */
     }
 
     .header-content {
-        padding:  100px 30px;
+        padding:  100px 30px; /* Agrega un relleno de 100px arriba y abajo, y 30px a los lados */
     }
 
     .header-content p {
-        padding: 0;
+        padding: 0; /* Elimina el relleno del párrafo */
     }
 
     .coffe {
-        padding: 30px;
+        padding: 30px; /* Agrega un relleno de 30px */
     }
 
     .coffe-content h2 {
-        padding: 0;
+        padding: 0; /* Elimina el relleno del encabezado */
     }
 
     .txt-p {
-        padding: 0;
+        padding: 0; /* Elimina el relleno del párrafo */
     }
 
     .coffe-group {
-        flex-direction: column;
-        margin-bottom: 0;
+        flex-direction: column; /* Cambia la dirección de los elementos a columna */
+        margin-bottom: 0; /* Elimina el margen inferior */
     }
 
     .coffe-img{
-        display: none;
+        display: none; /* Oculta la imagen de café */
     }
 
     .services {
-        padding: 30px;
+        padding: 30px; /* Agrega un relleno de 30px */
     }
 
     .services-content p {
-        padding: 0;
+        padding: 0; /* Elimina el relleno del párrafo */
     }
 
     .services-group{
-        flex-direction: column;
-        margin-bottom: 0;
+        flex-direction: column; /* Cambia la dirección de los elementos a columna */
+        margin-bottom: 0; /* Elimina el margen inferior */
     }
 
     .services-1{
-        margin-bottom: 25px;
+        margin-bottom: 25px; /* Agrega un margen inferior de 25px */
     }
 
     .general {
-        flex-direction: column;
+        flex-direction: column; /* Cambia la dirección de los elementos a columna */
     }
 
     .general-1 {
-        width: 100%;
-        padding: 30px;
-        text-align: center;
+        width: 100%; /* Define un ancho del 100% para la primera sección */
+        padding: 30px; /* Agrega un relleno de 30px */
+        text-align: center; /* Centra el texto */
     }
 
     .general-2, .general-3 {
-        display: none;
+        display: none; /* Oculta las secciones general-2 y general-3 */
     }
 
     .blog{
-        padding: 30px;
+        padding: 30px; /* Agrega un relleno de 30px */
     }
 
     .blog-content {
-        flex-direction: column;
+        flex-direction: column; /* Cambia la dirección de los elementos a columna */
     }
 
     .blog-1{
-        padding: 0;
+        padding: 0; /* Elimina el relleno del elemento */
     }
 
     .footer {
-        padding: 30px;
+        padding: 30px; /* Agrega un relleno de 30px */
     }
 
     .footer-content {
-        flex-direction: column;
-        text-align: center;
+        flex-direction: column; /* Cambia la dirección de los elementos a columna */
+        text-align: center; /* Centra el texto */
+    }
+
+    .logo img {
+        width: 75px; /* Tamaño más pequeño en pantallas reducidas */
     }
 }
